@@ -1,0 +1,245 @@
+.mi-util{
+    background-color:transparent;
+    padding:2px;
+    display: inherit;
+}
+
+.mi-util-hover{
+    background-color:#d2f45c;
+}
+
+.mi-util-ancho{
+    width: 45px;
+    text-align: center;
+}
+
+.tablacab {
+    position: relative;
+    top:1px;
+}
+/*.mi-util:hover{*/
+    /*background-color:#f9dce2;*/
+/*}*/
+
+.mi-util a {
+    background-color:transparent;
+    padding:4px;
+    display:block;
+}
+
+.mi-util a:hover {
+    background-color:transparent;
+}
+
+.mi-boton-cab{
+    background-color:transparent;
+    padding:2px;
+}
+.mi-boton-cab-hover{
+    background-color:#d2f45c;
+}
+
+/*.mi-util:hover{*/
+/*background-color:#f9dce2;*/
+/*}*/
+
+.mi-boton-cab a {
+    background-color:transparent;
+    padding:4px;
+    display:block;
+}
+.mi-boton-cab a:visited  {
+    background-color:transparent;
+}
+.mi-boton-cab a:link {
+    background-color:transparent;
+}
+.mi-boton-cab a:active {
+    background-color:transparent;
+}
+
+.mi-boton-cab a:hover {
+    background-color:transparent;
+}
+
+
+.mi-img-menu
+{
+    margin:2px;
+    height:16px;
+    width:16px;
+    background-image: url('images/bars-white.png');
+    background-repeat: no-repeat;
+}
+
+.mi-cab-menu {
+    display:block;
+    margin:-15px -15px;
+    background-color:#fafafa;
+    color:#416310;
+    font-size:0.95em;
+    font-weight:normal;
+    padding: 5px;
+    height: 55px;
+}
+.mi-cab-menu-texto {
+    float: right;
+    /*margin-top: 35px;*/
+    font-size: 0.8em;
+}
+.mi-ul {
+    list-style:none;
+    text-decoration:none;
+    font-size:0.95em;
+    -webkit-padding-start: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-weight: normal !important;
+}
+.mi-selected {
+    color:#96BD0D;
+}
+.mi-ul li {
+    border-bottom:1px solid #fafafa;
+    padding-left:10px;
+}
+.mi-ul li:hover {
+    background-color: #d2f45c;
+}
+
+.mi-ul a {
+	padding: 10px 10px;
+	text-decoration: none;
+	zoom: 1; /* IE7 */
+    color:#333333;
+}
+
+.mi-ul li a div{
+    font-weight: normal !important;
+}
+
+.div-loading {
+    background: url(../images/gif-load.gif) ;
+    background-size: 2.875em 2.875em;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 45%;
+    text-align: center;
+    color: #416310;
+    font-style: italic;
+    padding-top: 15px;
+}
+.div-mensaje {
+    text-align: center;
+    color: #416310;
+    font-style: italic;
+    padding-top: 15px;
+}
+
+
+.tdSelect .ui-select .ui-btn {
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1em;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: #333333;
+}
+.tdSelect .ui-select .ui-btn:hover {
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1em;
+    color: #333333;
+}
+.tdSelect .ui-select .ui-btn:visited {
+    background-color: transparent;
+    font-weight: normal;
+    font-size: 1em;
+    color: #333333;
+}
+
+#listviewLista li{
+    padding: 0px;
+}
+
+#listviewLista li a{
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #333333;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #fefefe;
+    text-transform: none;
+}
+
+#divFicha label{
+    font-size: 1.05em;
+}
+#divFicha table{
+    font-size: 1.05em;
+}
+
+.fit-content{
+    position : absolute;
+}
+
+.fit-content {
+    top : 40px;
+    bottom : 1px;
+    left : 0;
+    right : 0;
+}
+.fit-content > div {
+    height : 100%;
+}
+
+#divTipoInci{
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    display: inline-table;
+}
+
+#divTipoInci a{
+    width: 120px;
+    height: 85px;
+    display: inherit;
+    margin: 5px;
+    text-align: center;
+    white-space: normal;
+    text-transform: none;
+}
+
+#divTipoInci a div {
+    line-height: 15px;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 0.95em;
+}
+
+.divCargar{
+    text-align: center;
+    align-content: center;
+    background-color: #393939;
+    filter: Alpha(Opacity=30);
+    opacity: .3;
+}
+
+.divCargarDatos{
+    height: 15%;
+    position: absolute;
+    width: 50%;
+    top: 30%;
+    left: 25%;
+    background-color: #ffffff;
+    min-height: 130px;
+    min-width: 180px;
+    -webkit-box-shadow: 0 0 12px #c1e839 /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 12px #c1e839 /*{c-active-background-color}*/;
+    box-shadow: 0 0 12px #c1e839 /*{c-active-background-color}*/;
+}
+
+h3{
+    font-size: 1.3em !important;
+    font-weight: normal !important;
+}
