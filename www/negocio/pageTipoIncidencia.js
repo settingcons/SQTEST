@@ -67,7 +67,7 @@ function mostrarImagenes() {
     var nIndVis = 0;
     for (sImagen in dicImagenes) {
         sTagImg += "<a href='' onclick='" + "selectTipo(" + sImagen + ")' data-mini='false' data-inline='false' data-role='button' data-theme='c' data-corners='true' data-shadow='true' data-iconshadow='true' data-wrapperels='span' class='ui-btn ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-first-child ui-btn-up-c'>"
-        sTagImg += "<img alt='' src='" + dicImagenes[sImagen] + "' style='width:45px' />"
+        sTagImg += "<img alt='' src='" + dicImagenes[sImagen] + "'  />"
         sTagImg += "<div>" + dicAyuda[sImagen] + "</div>"
         sTagImg += "</a>"
     }
