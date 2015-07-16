@@ -282,7 +282,8 @@ function MostrarEsperaDatosIncidencia(){
 
 function enviarIncidencia(){
     try{
-        //Tipo de incidencia
+
+       //Tipo de incidencia
         sId=TipoInciSel;
         sDescItem=dicAyuda[TipoInciSel];
 

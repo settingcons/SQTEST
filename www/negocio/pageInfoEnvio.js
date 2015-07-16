@@ -66,6 +66,7 @@ function CrearComunicadoWS_OK(datos){
     var v_desError="";
     try {
 
+
         if (datos == null)  //==> ha habido error
         {
             v_sMensaje="No hi ha confirmació de l'enviament de la comunicació";
@@ -128,8 +129,10 @@ function CrearComunicadoWS_OK(datos){
     //Mostrar el resultado de la comunicación en pantalla
     $('#lblInfoEnvioText').text(v_sMensaje);
 }
+
 function CrearComunicadoWS_ERROR(error){
     var v_nIdCom = guardaIncidencia("-","PENDENT_ENVIAMENT","");
+
     if (sFoto != null) {guardaFotoEnLocal(v_nIdCom, sFoto);}
 
     $('#lblInfoEnvioText').text('Error en enviar el comunicat: \n '+error.responseText);
