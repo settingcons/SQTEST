@@ -29,7 +29,7 @@ function inicioPaginaInfoEnvio() {
             p_sVoz: _inciAudioFichero + ''
         };
 
-        alert (sParams);
+        alert ( 'p_sNom' + p_sNom + 'p_sCognom1'+p_sCognom1+'p_sCognom2'+p_sCognom2+'p_sDni'+p_sDni+ 'p_sEmail'+ p_sEmail +'p_sTelefon'+ p_sTelefon +'p_sObs'+p_sObs+'p_sCoord'+p_sCoord+'p_sCodCarrer'+p_sCodCarrer+'p_sNumPortal'+ p_sNumPortal);
 
         CrearComunicadoWS(sParams);
     }
