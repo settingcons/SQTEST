@@ -31,7 +31,7 @@ function inicioPaginaDatosIncidencia() {
         imagen.src = "images/play_gray.png";
 
         cargarPaginaDatosIncidencia();
-        //navigator.camera.getPicture(hacerfotoOK, hacerFotoERROR, { quality: 20, destinationType: Camera.DestinationType.DATA_URL, correctOrientation: true,sourceType:  Camera.PictureSourceType.CAMERA,  saveToPhotoAlbum: false });
+        navigator.camera.getPicture(hacerfotoOK, hacerFotoERROR, { quality: 20, destinationType: Camera.DestinationType.DATA_URL, correctOrientation: true,sourceType:  Camera.PictureSourceType.CAMERA,  saveToPhotoAlbum: false });
     }
     catch (ex){
         //alert(ex.message);
