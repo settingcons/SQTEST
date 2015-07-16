@@ -29,6 +29,7 @@ function inicioPaginaInfoEnvio() {
             p_sVoz: _inciAudioFichero + ''
         };
 
+        alert (sParams);
 
         CrearComunicadoWS(sParams);
     }
