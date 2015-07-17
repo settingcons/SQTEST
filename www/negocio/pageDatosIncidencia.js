@@ -311,7 +311,7 @@ function enviarIncidencia(){
 
         //Validar Datos
         var v_sRetorno = ValidarIncidencia();
-
+alert('v_sRetorno:' + v_sRetorno);
         if (v_sRetorno==""){
             abrirPagina("pageInfoEnvio",false)
         }
