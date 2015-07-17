@@ -287,9 +287,11 @@ function enviarIncidencia(){
         sId=TipoInciSel;
         sDescItem=dicAyuda[TipoInciSel];
 
+alert('sId: '+sId + 'sDescItem: '+ sDescItem);
+
         //Comentario
         sComentario = $('#textareaComentari').val();
-
+alert('sComentario: '+sComentario);
         //Coordenadas
         sCoords="";
         if (posAlta !="") {
@@ -305,6 +307,7 @@ function enviarIncidencia(){
         {
             sDireccionAlta = $('#selectCARRER').find(":selected").text() + ', ' + $('#inputNUM').val();
         }
+alert(sDireccionAlta);
 
         //Validar Datos
         var v_sRetorno = ValidarIncidencia();
