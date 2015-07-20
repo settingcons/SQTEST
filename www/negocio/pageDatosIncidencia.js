@@ -287,11 +287,12 @@ function enviarIncidencia(){
         sId=TipoInciSel;
         sDescItem=dicAyuda[TipoInciSel];
 
-//alert('sId: '+sId + 'sDescItem: '+ sDescItem);
+        alert('abans de fer el canvi  on sid = tipoInciSel es sId:'+sId)
+
 
         //Comentario
         sComentario = $('#textareaComentari').val();
-//alert('sComentario: '+sComentario);
+
         //Coordenadas
         sCoords="";
         if (posAlta !="") {
@@ -307,12 +308,12 @@ function enviarIncidencia(){
         {
             sDireccionAlta = $('#selectCARRER').find(":selected").text() + ', ' + $('#inputNUM').val();
         }
-//alert(sDireccionAlta);
 
         //Validar Datos
         var v_sRetorno = ValidarIncidencia();
-alert('v_sRetorno:' + v_sRetorno);
+
         if (v_sRetorno==""){
+            alert('voy a abrir pageInfoEnvio');
             abrirPagina("pageInfoEnvio",false)
         }
         else{
@@ -324,7 +325,7 @@ alert('v_sRetorno:' + v_sRetorno);
     }
     catch (ex){
         $('#divDatosIncidenciaEspera').hide();
-        mensaje("ERROR: "+ex.message,"error");
+        mensaje("ERROR: PETOOOOOO   "+ex.message,"error");
     }
 }
 

@@ -8,15 +8,27 @@ function inicioPaginaInfoEnvio() {
 
         var objUsu = getDatosUsuario();
 
+        alert(TipoInciSel.toString().trim());
+        alert(objUsu.NOM.toString().trim());
+        alert(objUsu.COGNOM1.toString().trim());
+        alert(objUsu.COGNOM2.toString().trim());
+        alert(objUsu.DNI.toString().trim() );
+        alert(objUsu.EMAIL.toString().trim());
+        alert(objUsu.TELEFON.toString().trim());
+        alert(sComentario.toString().trim() );
+
         var v_sCodCarrer='';
         var v_sNumPortal='';
         if(sCoords.toString().trim()==""){
             v_sCodCarrer=$('#selectCARRER').val();
             v_sNumPortal=$('#inputNUM').val();
         }
-		 //hgs 200715 modificat de moment per proves
-        //var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
-        var  sParams = {p_sIdTipoInci:'357 ',
+
+        alert(sCoords.toString().trim() );
+        alert(v_sCodCarrer.toString().trim());
+        alert(v_sNumPortal.toString().trim());
+
+        var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
             p_sNom: objUsu.NOM.toString().trim() + '',
             p_sCognom1:objUsu.COGNOM1.toString().trim() + '',
             p_sCognom2:objUsu.COGNOM2.toString().trim() + '',
@@ -30,7 +42,6 @@ function inicioPaginaInfoEnvio() {
             p_sFoto:sFoto + '',
             p_sVoz: _inciAudioFichero + ''
         };
-        alert ( 'p_sNom' + p_sNom + 'p_sCognom1'+p_sCognom1+'p_sCognom2'+p_sCognom2+'p_sDni'+p_sDni+ 'p_sEmail'+ p_sEmail +'p_sTelefon'+ p_sTelefon +'p_sObs'+p_sObs+'p_sCoord'+p_sCoord+'p_sCodCarrer'+p_sCodCarrer+'p_sNumPortal'+ p_sNumPortal);
 
         CrearComunicadoWS(sParams);
     }
@@ -68,8 +79,7 @@ function CrearComunicadoWS_OK(datos){
     var v_desError="";
     try {
 
-alert('datos:'+datos);
-	
+
         if (datos == null)  //==> ha habido error
         {
             v_sMensaje="No hi ha confirmació de l'enviament de la comunicació";
