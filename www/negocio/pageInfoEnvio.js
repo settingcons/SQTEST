@@ -14,7 +14,9 @@ function inicioPaginaInfoEnvio() {
             v_sCodCarrer=$('#selectCARRER').val();
             v_sNumPortal=$('#inputNUM').val();
         }
-        var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
+		 //hgs 200715 modificat de moment per proves
+        //var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
+        var  sParams = {p_sIdTipoInci:'357 ',
             p_sNom: objUsu.NOM.toString().trim() + '',
             p_sCognom1:objUsu.COGNOM1.toString().trim() + '',
             p_sCognom2:objUsu.COGNOM2.toString().trim() + '',
