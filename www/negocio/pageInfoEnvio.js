@@ -14,7 +14,7 @@ function inicioPaginaInfoEnvio() {
             v_sCodCarrer=$('#selectCARRER').val();
             v_sNumPortal=$('#inputNUM').val();
         }
-        var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
+        /*var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
             p_sNom: objUsu.NOM.toString().trim() + '',
             p_sCognom1:objUsu.COGNOM1.toString().trim() + '',
             p_sCognom2:objUsu.COGNOM2.toString().trim() + '',
@@ -27,9 +27,27 @@ function inicioPaginaInfoEnvio() {
             p_sNumPortal:v_sNumPortal.toString().trim()+'',
             p_sFoto:sFoto + '',
             p_sVoz: _inciAudioFichero + ''
+        };*/
+
+
+        //hgs 200715, per demo de SQ
+        var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
+            p_sNom:'tot' + '',
+            p_sCognom1:'cognom1' + '',
+            p_sCognom2:'cognom2' + '',
+            p_sDni:'35114885A' +'',
+            p_sEmail:'dd@@dd.com' + '',
+            p_sTelefon:'666334488' + '',
+            p_sObs:sComentario.toString().trim() +'',
+            p_sCoord:sCoords.toString().trim() + '',
+            p_sCodCarrer:v_sCodCarrer.toString().trim()+'',
+            p_sNumPortal:v_sNumPortal.toString().trim()+'',
+            p_sFoto:sFoto + '',
+            p_sVoz: _inciAudioFichero + ''
         };
 
-        alert ( 'p_sNom' + p_sNom + 'p_sCognom1'+p_sCognom1+'p_sCognom2'+p_sCognom2+'p_sDni'+p_sDni+ 'p_sEmail'+ p_sEmail +'p_sTelefon'+ p_sTelefon +'p_sObs'+p_sObs+'p_sCoord'+p_sCoord+'p_sCodCarrer'+p_sCodCarrer+'p_sNumPortal'+ p_sNumPortal);
+
+       // alert ( 'p_sNom' + p_sNom + 'p_sCognom1'+p_sCognom1+'p_sCognom2'+p_sCognom2+'p_sDni'+p_sDni+ 'p_sEmail'+ p_sEmail +'p_sTelefon'+ p_sTelefon +'p_sObs'+p_sObs+'p_sCoord'+p_sCoord+'p_sCodCarrer'+p_sCodCarrer+'p_sNumPortal'+ p_sNumPortal);
 
         CrearComunicadoWS(sParams);
     }
