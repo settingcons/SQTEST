@@ -66,7 +66,8 @@ function CrearComunicadoWS_OK(datos){
     var v_desError="";
     try {
 
-
+alert('datos:'+datos);
+	
         if (datos == null)  //==> ha habido error
         {
             v_sMensaje="No hi ha confirmació de l'enviament de la comunicació";
