@@ -8,14 +8,14 @@ function inicioPaginaInfoEnvio() {
 
         var objUsu = getDatosUsuario();
 
-        alert(TipoInciSel.toString().trim());
-        alert(objUsu.NOM.toString().trim());
-        alert(objUsu.COGNOM1.toString().trim());
-        alert(objUsu.COGNOM2.toString().trim());
-        alert(objUsu.DNI.toString().trim() );
-        alert(objUsu.EMAIL.toString().trim());
-        alert(objUsu.TELEFON.toString().trim());
-        alert(sComentario.toString().trim() );
+        //alert(TipoInciSel.toString().trim());
+        //alert(objUsu.NOM.toString().trim());
+        //alert(objUsu.COGNOM1.toString().trim());
+        //alert(objUsu.COGNOM2.toString().trim());
+        //alert(objUsu.DNI.toString().trim() );
+        //alert(objUsu.EMAIL.toString().trim());
+        //alert(objUsu.TELEFON.toString().trim());
+        //alert(sComentario.toString().trim() );
 
         var v_sCodCarrer='';
         var v_sNumPortal='';
@@ -24,9 +24,9 @@ function inicioPaginaInfoEnvio() {
             v_sNumPortal=$('#inputNUM').val();
         }
 
-        alert(sCoords.toString().trim() );
-        alert(v_sCodCarrer.toString().trim());
-        alert(v_sNumPortal.toString().trim());
+        //alert(sCoords.toString().trim() );
+        //alert(v_sCodCarrer.toString().trim());
+        //alert(v_sNumPortal.toString().trim());
 
         var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
             p_sNom: objUsu.NOM.toString().trim() + '',
@@ -43,6 +43,7 @@ function inicioPaginaInfoEnvio() {
             p_sVoz: _inciAudioFichero + ''
         };
 
+       // alert('Antes de CrearComunicadoWS');
         CrearComunicadoWS(sParams);
     }
     catch (ex){
@@ -54,6 +55,9 @@ function inicioPaginaInfoEnvio() {
 
 function CrearComunicadoWS(sParams){
     try {
+
+        //alert('En CrearComunicadoWS');
+
         $.ajax({
             type: 'POST',
             url: _wsURLCrearIncidencia,

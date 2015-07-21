@@ -287,9 +287,6 @@ function enviarIncidencia(){
         sId=TipoInciSel;
         sDescItem=dicAyuda[TipoInciSel];
 
-        alert('abans de fer el canvi  on sid = tipoInciSel es sId:'+sId)
-
-
         //Comentario
         sComentario = $('#textareaComentari').val();
 
@@ -313,15 +310,15 @@ function enviarIncidencia(){
         var v_sRetorno = ValidarIncidencia();
 
         if (v_sRetorno==""){
-            alert('voy a abrir pageInfoEnvio');
+        //    alert('voy a abrir pageInfoEnvio');
             abrirPagina("pageInfoEnvio",false)
         }
         else{
             $('#divDatosIncidenciaEspera').hide();
 
             mensaje("Falten dades obligatòries;\n"+v_sRetorno,"avís");
-
         }
+        abrirPagina("pageInfoEnvio",false)
     }
     catch (ex){
         $('#divDatosIncidenciaEspera').hide();
