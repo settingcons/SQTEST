@@ -7,14 +7,15 @@ var _ayuntamiento_posicionY = '2,0852293';
 //dmz
 //testvar _wsURLCrearIncidencia="http://80.39.72.44:8000/wsAPPGIV/wsIncidentNotifierGIV.asmx/IncidenciaTipus_v1";
 //testvar _wsURLCrearIncidencia="http://80.39.72.44:8000/wsAPPSQ/wsAPPSQ.asmx/TestWs";
-var _wsURLCrearIncidencia="http://80.39.72.44:8000/wsAPPSQ/wsAPPSQ.asmx/IncidenciaTipus";
-var _wsURLConsultaIncidencia="http://80.39.72.44:8000/wsAPPSQ/wsAPPSQ.asmx/ConsultaComunicatsTipus";
-var _wsURLLogin="http://80.39.72.44:8000/wsAPPSQ/wsAPPSQ.asmx/Login";
+
+var _wsURLCrearIncidencia="http://83.48.8.99:8000/wsAPPSQ/wsAPPSQ.asmx/IncidenciaTipus";
+var _wsURLConsultaIncidencia="http://83.48.8.99:8000/wsAPPSQ/wsAPPSQ.asmx/ConsultaComunicatsTipus";
+var _wsURLLogin="http://83.48.8.99:8000/wsAPPSQ/wsAPPSQ.asmx/Login";
 
 //Santcugat
-//var _wsURLCrearIncidencia="http://82.159.148.100:81/wsAPPSQ/wsAPPSQ.asmx/IncidenciaTipus";
-//var _wsURLConsultaIncidencia="http://82.159.148.100:81/wsAPPSQ/wsAPPSQ.asmx/ConsultaComunicatsTipus";
-//var _wsURLLogin="http://82.159.148.100:81/wsAPPSQ/wsAPPSQ.asmx/Login";
+//var _wsURLCrearIncidencia="http://82.159.148.100:8087/wsAPPSQ/wsAPPSQ.asmx/IncidenciaTipus";
+//var _wsURLConsultaIncidencia="http://82.159.148.100:8087/wsAPPSQ/wsAPPSQ.asmx/ConsultaComunicatsTipus";
+//var _wsURLLogin="http://82.159.148.100:8087/wsAPPSQ/wsAPPSQ.asmx/Login";
 
 
 var _mediaAudio;
