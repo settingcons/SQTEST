@@ -81,7 +81,10 @@
         <param name="android-package" value="cordova.plugins.diagnostic"/>
     </feature>
 
-    <plugin name="SplashScreen" value="”org.apache.cordova.SplashScreen" source="pgb"/>
+    <feature name="SplashScreen">
+        <param name="ios-package" value="CDVSplashScreen" />
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+    </feature>
 
     <feature name="File">
         <param name="android-package" value="org.apache.cordova.file.FileUtils" />
