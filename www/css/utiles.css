@@ -183,6 +183,12 @@
     position : absolute;
 }
 
+.fit-content {
+    top : 40px;
+    bottom : 1px;
+    left : 0;
+    right : 0;
+}
 .fit-content > div {
     height : 100%;
 }
@@ -211,8 +217,6 @@
 }
 
 
-@media screen and (min-width : 320px)
-{
     h3{
         font-size: 1.3em !important;
         font-weight: normal !important;
@@ -245,68 +249,4 @@
     #divTipoInci a img {
         width: 45px;
     }
-    #TipusInciText {
-        text-transform: none;
-        font-size:14px;
-        padding-top:7px;
-        color:#416310;
-    }
 
-    .fit-content {
-        top : 40px;
-        bottom : 1px;
-        left : 0;
-        right : 0;
-    }
-
-}
-
-@media screen and (min-width : 800px)
-{
-    h3{
-        font-size: 1.6em !important;
-        font-weight: normal !important;
-        line-height: 50px;
-    }
-
-    #divTipoInci{
-        width: 100%;
-        text-align: center;
-        align-content: center;
-        display: inline-table;
-    }
-
-    #divTipoInci a{
-        width: 220px;
-        height: 185px;
-        display: inherit;
-        margin: 5px;
-        text-align: center;
-        white-space: normal;
-        text-transform: none;
-    }
-
-    #divTipoInci a img {
-        width: 130px;
-    }
-
-    #divTipoInci a div {
-        line-height: 25px;
-        font-weight: normal;
-        text-transform: uppercase;
-        font-size: 1.5em;
-    }
-    #TipusInciText {
-        text-transform: uppercase;
-        font-size: 1.2em;
-        padding-top:7px;
-        color:#416310;
-    }
-    .fit-content {
-        top : 55px;
-        bottom : 1px;
-        left : 0;
-        right : 0;
-    }
-
-}
