@@ -8,26 +8,12 @@ function inicioPaginaInfoEnvio() {
 
         var objUsu = getDatosUsuario();
 
-        //alert(TipoInciSel.toString().trim());
-        //alert(objUsu.NOM.toString().trim());
-        //alert(objUsu.COGNOM1.toString().trim());
-        //alert(objUsu.COGNOM2.toString().trim());
-        //alert(objUsu.DNI.toString().trim() );
-        //alert(objUsu.EMAIL.toString().trim());
-        //alert(objUsu.TELEFON.toString().trim());
-        //alert(sComentario.toString().trim() );
-
         var v_sCodCarrer='';
         var v_sNumPortal='';
         if(sCoords.toString().trim()==""){
             v_sCodCarrer=$('#selectCARRER').val();
             v_sNumPortal=$('#inputNUM').val();
         }
-
-        //alert(sCoords.toString().trim() );
-        //alert(v_sCodCarrer.toString().trim());
-        //alert(v_sNumPortal.toString().trim());
-
         var  sParams = {p_sIdTipoInci:TipoInciSel.toString().trim()+'',
             p_sNom: objUsu.NOM.toString().trim() + '',
             p_sCognom1:objUsu.COGNOM1.toString().trim() + '',
@@ -43,7 +29,7 @@ function inicioPaginaInfoEnvio() {
             p_sVoz: _inciAudioFichero + ''
         };
 
-       // alert('Antes de CrearComunicadoWS');
+
         CrearComunicadoWS(sParams);
     }
     catch (ex){
@@ -55,9 +41,6 @@ function inicioPaginaInfoEnvio() {
 
 function CrearComunicadoWS(sParams){
     try {
-
-        //alert('En CrearComunicadoWS');
-
         $.ajax({
             type: 'POST',
             url: _wsURLCrearIncidencia,
@@ -82,7 +65,6 @@ function CrearComunicadoWS_OK(datos){
     var v_codError="";
     var v_desError="";
     try {
-
 
         if (datos == null)  //==> ha habido error
         {
@@ -146,10 +128,8 @@ function CrearComunicadoWS_OK(datos){
     //Mostrar el resultado de la comunicación en pantalla
     $('#lblInfoEnvioText').text(v_sMensaje);
 }
-
 function CrearComunicadoWS_ERROR(error){
     var v_nIdCom = guardaIncidencia("-","PENDENT_ENVIAMENT","");
-
     if (sFoto != null) {guardaFotoEnLocal(v_nIdCom, sFoto);}
 
     $('#lblInfoEnvioText').text('Error en enviar el comunicat: \n '+error.responseText);

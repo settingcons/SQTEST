@@ -32,6 +32,7 @@ function limpiaVariablesInci(){
     sId='';
     sDescItem='';
 
+    //Comentario
     sComentario = '';
 
     sFoto = '';
@@ -77,7 +78,7 @@ function mostrarImagenes() {
 function selectTipo(p_tipo) {
     try{
         TipoInciSel = p_tipo;
-       navigator.camera.getPicture(hacerfotoOK, hacerFotoERROR, { quality: 10, destinationType: Camera.DestinationType.DATA_URL, correctOrientation: true,sourceType:  Camera.PictureSourceType.CAMERA,  saveToPhotoAlbum: false });
+        navigator.camera.getPicture(hacerfotoOK, hacerFotoERROR, { quality: 10, destinationType: Camera.DestinationType.DATA_URL, correctOrientation: true,sourceType:  Camera.PictureSourceType.CAMERA,  saveToPhotoAlbum: false });
         //abrirPagina('pageDatosIncidencia', false);
     }
     catch (ex){

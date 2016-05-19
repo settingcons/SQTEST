@@ -139,19 +139,18 @@
                 </tr>
             </table>
         </div>
-        <div data-role="content" data-theme="c" class="fit-content" style="padding:0px">
-            <div>
-            <div style="display:table;width: 98%;height: 40%;  padding-top: 5px;padding-left:1%;padding-right: 1% ">
-                <div id="divFoto" style="float:left;width:70%;height: 100%">
-                    <img id="imgFoto" src="images/sinFoto.png" style="max-height:100%;max-width:100%; width: 95%; border:1px solid #dddddd" onclick="abrirPagina('pageZoomFoto', false);" />
+        <div data-role="content" data-theme="c" style="padding:0px">
+            <div style="display:table;width: 98%; padding-top: 5px;padding-left:1%;padding-right: 1% ">
+                <div id="divFoto" style="float:left;width:70%;">
+                    <img id="imgFoto" src="images/sinFoto.png" style="max-height:130px;max-width:100%; border:1px solid #dddddd" onclick="abrirPagina('pageZoomFoto', false);" />
                 </div>
-                <div id="TipusInci" style="float:right;width:30%;height:100%; margin-top:30px;text-align:center">
-                    <img id="TipusInciImg" alt="" src="" style="width:90%;max-height:100%;max-width:100%;" />
+                <div id="TipusInci" style="float:right;width:30%;margin-top:30px;text-align:center">
+                    <img id="TipusInciImg" alt="" src="" style="width:40px;" />
                     <div id="TipusInciText" style="padding-top:7px;font-size:14px;color:#416310;"></div>
                 </div>
             </div>
-            <div style="height: 40%; padding-left:5px;padding-right: 5px">
-                <table style="width: 100%;height: 100%; border:1px solid #dddddd">
+            <div style="padding-left:5px;padding-right: 5px">
+                <table style="width: 100%;border:1px solid #dddddd">
                     <tr>
                         <td>
                             <div id="divDireccion" style="height: 185px;">
@@ -174,10 +173,10 @@
                                 </table>
 
                             </div>
-                            <div id="divCargarMapaAlta" class="div-loading" style="height: 100%">
+                            <div id="divCargarMapaAlta" class="div-loading" style="height: 185px;">
                                 <label>cercant localització...</label>
                             </div>
-                            <div id='divMensajeMapa' class="div-mensaje" style="height: 100%;">
+                            <div id='divMensajeMapa' class="div-mensaje" style="height: 185px;">
                                 <label id="lblMensajeMapa">
                                     la localització sobre plànol no ha estat possible
                                 </label>
@@ -186,8 +185,8 @@
                                     Reintentar
                                 </a>
                             </div>
-                            <div id="divMapa" style="width: 100%;height: 100%">
-                                <div id="divMapaAlta" style="height: 90%;">
+                            <div id="divMapa" style="width: 100%">
+                                <div id="divMapaAlta" style="height: 195px;">
                                 </div>
                                 <label id="labelDireccion"></label>
                             </div>
@@ -261,7 +260,6 @@
                     </table>
 
                 </div>
-            </div>
             </div>
         </div>
     </div>

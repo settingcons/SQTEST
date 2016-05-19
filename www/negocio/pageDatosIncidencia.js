@@ -282,8 +282,7 @@ function MostrarEsperaDatosIncidencia(){
 
 function enviarIncidencia(){
     try{
-
-       //Tipo de incidencia
+        //Tipo de incidencia
         sId=TipoInciSel;
         sDescItem=dicAyuda[TipoInciSel];
 
@@ -310,19 +309,18 @@ function enviarIncidencia(){
         var v_sRetorno = ValidarIncidencia();
 
         if (v_sRetorno==""){
-        //    alert('voy a abrir pageInfoEnvio');
             abrirPagina("pageInfoEnvio",false)
         }
         else{
             $('#divDatosIncidenciaEspera').hide();
 
             mensaje("Falten dades obligatòries;\n"+v_sRetorno,"avís");
+
         }
-        abrirPagina("pageInfoEnvio",false)
     }
     catch (ex){
         $('#divDatosIncidenciaEspera').hide();
-        mensaje("ERROR: PETOOOOOO   "+ex.message,"error");
+        mensaje("ERROR: "+ex.message,"error");
     }
 }
 

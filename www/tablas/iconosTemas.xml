@@ -1,53 +1,53 @@
 <?xml version="1.0"?>
 <icoTemas>
 <icoTema>
-<id>125</id>
-<img>125_red.png</img>
+<id>1</id>
+<img>1_red.png</img>
 <desc>Ocupacions</desc>
 </icoTema>
 <icoTema>
-<id>130</id>
-<img>130_red.png</img>
+<id>2</id>
+<img>2_red.png</img>
 <desc>Transport</desc>
 </icoTema>
 <icoTema>
-<id>135</id>
-<img>135_red.png</img>
+<id>3</id>
+<img>3_red.png</img>
 <desc>Circulació</desc>
 </icoTema>
 <icoTema>
-<id>150</id>
-<img>150_red.png</img>
+<id>4</id>
+<img>4_red.png</img>
 <desc>Manteniment Via Pública</desc>
 </icoTema>
 <icoTema>
-<id>145</id>
-<img>145_red.png</img>
+<id>5</id>
+<img>5_red.png</img>
 <desc>Mobiliari Urbà</desc>
 </icoTema>
 <icoTema>
-<id>160</id>
-<img>160_red.png</img>
+<id>6</id>
+<img>6_red.png</img>
 <desc>Neteja Viària</desc>
 </icoTema>
 <icoTema>
-<id>155</id>
-<img>155_red.png</img>
+<id>7</id>
+<img>7_red.png</img>
 <desc>Recollida de Residus</desc>
 </icoTema>
 <icoTema>
-<id>180</id>
-<img>180_red.png</img>
+<id>8</id>
+<img>8_red.png</img>
 <desc>Parcs i Jardins</desc>
 </icoTema>
 <icoTema>
-<id>265</id>
-<img>265_red.png</img>
+<id>9</id>
+<img>9_red.png</img>
 <desc>Enllumenat Públic</desc>
 </icoTema>
 <icoTema>
-<id>230</id>
-<img>230_red.png</img>
+<id>10</id>
+<img>10_red.png</img>
 <desc>Edificis Municipals</desc>
 </icoTema>
 </icoTemas>
