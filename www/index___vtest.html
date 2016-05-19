@@ -22,7 +22,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>GISQtest</title>
+        <title>SQtest</title>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
         <meta name="author" content="" />
@@ -34,7 +34,7 @@
         <link href="css/themes/Rojos/jquery.mobile.icons.min.css" rel="stylesheet" />
         <link href="css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" type="text/css" />
         <link href="css/jquery.mobile.datebox-1.0.2.min.css" rel="stylesheet" type="text/css" />
-        <link href="css/utiles_____.css" rel="stylesheet" />
+        <link href="css/utiles.css" rel="stylesheet" />
 
         <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
         <script src="js/jquery.json-2.2.min.js" type="text/javascript"></script>
@@ -56,7 +56,7 @@
         <script src="negocio/pageDatosIncidencia.js" type="text/javascript"></script>
         <script src="negocio/pageIdentificacion.js" type="text/javascript"></script>
         <script src="negocio/pageConsultaIncidencias.js" type="text/javascript"></script>
-        <script src="negocio/pageInfoEnvio.js" type="text/javascript"></script>
+        <script src="negocio/pageInfoEnvio.js" type="text/javascript"></script>t
         <!-- objetos -->
         <script src="objetos/usuari.js" type="text/javascript"></script>
         <script src="objetos/carrer.js" type="text/javascript"></script>
@@ -114,6 +114,7 @@
             </div>
         </div>
     </div>
+
     <div data-role="page" id="pageDatosIncidencia">
         <div data-role="header"  data-theme="c" style="border: 0px">
             <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tablacab">
@@ -139,19 +140,18 @@
                 </tr>
             </table>
         </div>
-        <div data-role="content" data-theme="c" class="fit-content" style="padding:0px">
-            <div>
-            <div style="display:table;width: 98%;height: 40%;  padding-top: 5px;padding-left:1%;padding-right: 1% ">
-                <div id="divFoto" style="float:left;width:70%;height: 100%">
-                    <img id="imgFoto" src="images/sinFoto.png" style="max-height:100%;max-width:100%; width: 95%; border:1px solid #dddddd" onclick="abrirPagina('pageZoomFoto', false);" />
+        <div data-role="content" data-theme="c" style="padding:0px">
+            <div style="display:table;width: 98%; padding-top: 5px;padding-left:1%;padding-right: 1% ">
+                <div id="divFoto" style="float:left;width:70%;">
+                    <img id="imgFoto" src="images/sinFoto.png" style="max-height:130px;max-width:100%; border:1px solid #dddddd" onclick="abrirPagina('pageZoomFoto', false);" />
                 </div>
-                <div id="TipusInci" style="float:right;width:30%;height:100%; margin-top:30px;text-align:center">
-                    <img id="TipusInciImg" alt="" src="" style="width:90%;max-height:100%;max-width:100%;" />
+                <div id="TipusInci" style="float:right;width:30%;margin-top:30px;text-align:center">
+                    <img id="TipusInciImg" alt="" src="" style="width:40px;" />
                     <div id="TipusInciText" style="padding-top:7px;font-size:14px;color:#416310;"></div>
                 </div>
             </div>
-            <div style="height: 40%; padding-left:5px;padding-right: 5px">
-                <table style="width: 100%;height: 100%; border:1px solid #dddddd">
+            <div style="padding-left:5px;padding-right: 5px">
+                <table style="width: 100%;border:1px solid #dddddd">
                     <tr>
                         <td>
                             <div id="divDireccion" style="height: 185px;">
@@ -174,10 +174,10 @@
                                 </table>
 
                             </div>
-                            <div id="divCargarMapaAlta" class="div-loading" style="height: 100%">
+                            <div id="divCargarMapaAlta" class="div-loading" style="height: 185px;">
                                 <label>cercant localització...</label>
                             </div>
-                            <div id='divMensajeMapa' class="div-mensaje" style="height: 100%;">
+                            <div id='divMensajeMapa' class="div-mensaje" style="height: 185px;">
                                 <label id="lblMensajeMapa">
                                     la localització sobre plànol no ha estat possible
                                 </label>
@@ -186,8 +186,8 @@
                                     Reintentar
                                 </a>
                             </div>
-                            <div id="divMapa" style="width: 100%;height: 100%">
-                                <div id="divMapaAlta" style="height: 90%;">
+                            <div id="divMapa" style="width: 100%">
+                                <div id="divMapaAlta" style="height: 195px;">
                                 </div>
                                 <label id="labelDireccion"></label>
                             </div>
@@ -216,7 +216,7 @@
                 </table>
             </div>
             <div style="padding-left:5px;padding-right: 5px">
-                <a href="#" id="buttonEnviar"  data-mini="true" data-inline="false" data-role="button" data-theme="c" style="width:90%;height:25px ;padding-top:10px;text-align:center;margin:auto">
+                <a href="#" id="buttonEnviar" data-mini="true" data-inline="false" data-role="button" data-theme="c" style="width:90%;height:25px ;padding-top:10px;text-align:center;margin:auto">
                     Enviar
                 </a>
             </div>
@@ -224,7 +224,7 @@
                 <div class="divCargar">
 
                 </div>
-                <div class="div-loading divCargarDatos"  style="height: 15%" ><label>pocessant dades...</label></div>
+                <div class="div-loading divCargarDatos"  style="height: 15%" ><label>processant dades...</label></div>
             </div>
             <div id="divDatosIncidenciaAudioPlay" class="fit-content" style="display: none">
                 <div class="divCargar">
@@ -262,9 +262,9 @@
 
                 </div>
             </div>
-            </div>
         </div>
     </div>
+
     <div data-role="page" id="pageInfoEnvio">
         <div data-role="header"  data-theme="c" style="border: 0px">
             <table width="100%" cellspacing="0" cellpadding="0" border="0" class="tablacab"><tr><td align="center" style="height: 30px;padding-top: 3px"><h3  style="margin: 0em;">Resultat enviament</h3></td></tr></table>
@@ -277,8 +277,7 @@
             <div id="InfoEnvioText" style="min-height:100px"> <label id="lblInfoEnvioText">
                 Resultat de la comunicació
             </label></div>
-            <div><table style="width:100%"><tr><td><a href="#" id="buttonBueva" onclick="abrirPagina('pageTipoIncidencia', false)"
-                                                      data-mini="true" data-inline="false" data-role="button" data-theme="c" style="width:80%;height:25px ;padding-top:10px;text-align:center;margin:auto">
+            <div><table style="width:100%"><tr><td><a href="#" id="buttonBueva" onclick="abrirPagina('pageTipoIncidencia', false)" data-mini="true" data-inline="false" data-role="button" data-theme="c" style="width:80%;height:25px ;padding-top:10px;text-align:center;margin:auto">
                 Nova
             </a></td><td><a href="#" id="buttonSalir" onclick="salir()"
                             data-mini="true" data-inline="false" data-role="button" data-theme="c" style="width:80%;height:25px ;padding-top:10px;text-align:center;margin:auto">
@@ -286,6 +285,7 @@
             </a></td></tr></table></div></div>
         </div>
     </div>
+
     <div data-role="page" id="pageIdentificacion">
         <div data-role="panel" id="leftmenu2" data-display="overlay" data-position="right" data-theme="c" style="background-color:#f3f3f3" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
             <div class="mi-cab-menu">
@@ -381,6 +381,7 @@
             </a></td></tr></table></div>
         </div>
     </div>
+
     <div data-role="page" id="pageConsultaIncidencias" >
         <div data-role="panel" id="leftmenu3" data-display="overlay" data-position="right" data-theme="c" style="background-color:#f3f3f3" class="ui-panel ui-panel-position-right ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
             <div class="mi-cab-menu">
