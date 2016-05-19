@@ -236,7 +236,6 @@ function getLocation() {
 function onLocationSuccess(loc) {
     GPSwathId = true;
     posicionGPS = loc;
-    alert("watchPositionOK");
 }
 
 function onLocationError(e) {
